@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be049265-fbd6-4de2-a515-af36ab29a6a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Acer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ControleMaquinaRefri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ControleMaquinaRefri.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="316" column="32" lean-forward="true" selection-start-line="316" selection-start-column="32" selection-end-line="316" selection-end-column="32" />
+            <state relative-caret-position="442">
+              <caret line="167" column="124" selection-start-line="167" selection-start-column="124" selection-end-line="167" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -38,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="47082ce323f3b6dacf4374e9228eb17d4cae590e" />
+        <entry key="$PROJECT_DIR$" value="Lucas" />
       </map>
     </option>
   </component>
@@ -76,7 +75,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554525333769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adição função crédito">
+      <created>1554536485353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554536485353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -173,7 +179,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49960256" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -187,13 +193,14 @@
     <MESSAGE value="Correção do código para uso de while ao invés de funções" />
     <MESSAGE value="Venda funcionando com devolução de troco e atualização de estoque" />
     <MESSAGE value="Devoluçãodo troco aprimorado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Devoluçãodo troco aprimorado" />
+    <MESSAGE value="Adição função crédito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adição função crédito" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="316" column="32" lean-forward="true" selection-start-line="316" selection-start-column="32" selection-end-line="316" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="167" column="124" selection-start-line="167" selection-start-column="124" selection-end-line="167" selection-end-column="124" />
         </state>
       </provider>
     </entry>
