@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be049265-fbd6-4de2-a515-af36ab29a6a0" name="Default Changelist" comment="" />
+    <list default="true" id="be049265-fbd6-4de2-a515-af36ab29a6a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="-1054">
+              <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -30,6 +32,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,7 +72,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,13 +132,35 @@
       <option name="project" value="LOCAL" />
       <updated>1554169128307</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correção do código para uso de while ao invés de funções">
+      <created>1554219916725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554219916725</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Venda funcionando com devolução de troco e atualização de estoque">
+      <created>1554232666603</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554232666604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Devoluçãodo troco aprimorado">
+      <created>1554525333769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554525333769</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15033557" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07034976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -141,7 +170,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -152,13 +181,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Area admin interface completa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Area admin interface completa" />
+    <MESSAGE value="Correção do código para uso de while ao invés de funções" />
+    <MESSAGE value="Venda funcionando com devolução de troco e atualização de estoque" />
+    <MESSAGE value="Devoluçãodo troco aprimorado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Devoluçãodo troco aprimorado" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state relative-caret-position="-1054">
+          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
         </state>
       </provider>
     </entry>
