@@ -1,5 +1,6 @@
 ##### Variáveis #####
 
+
 isRunning = True
 idProduct = 0
 qntProduct1 = 10
