@@ -108,6 +108,8 @@ while isRunning:
                              " 2     |   Moedas \n"
                              "--------------------------------------------------------\n"))
 
+
+        #Produtos
         while addProduto == 1:
             produtoAdicionar = float(input("Qual bebida deseja adicionar?: \n"))
 
@@ -151,7 +153,7 @@ while isRunning:
 
 
 
-        #Adicionando dinheiro ao caixa
+        #Dinheiro
         addCaixa = int(input("----------------------------------------------------------------------\n"
                              "Tem certeza que deseja adicionar moedas ao caixa ?, escolha uma opção:\n"
                              " Opção |   Descrição \n"
@@ -196,15 +198,7 @@ while isRunning:
                 notaQuantia = int(input("Digite a quantia de notas de 100: \n"))
                 qntNotaMaquina100 += notaQuantia
 
-            print("A máquina possui o seguinte estoque:")
-            print()
-            print("-----------------------------------")
-            print("Número|  Bebida          | Quantidade")
-            print("  1   |  Coca-Cola       |   ", qntProduct1)
-            print("  2   |  Fanta Uva       |   ", qntProduct2)
-            print("  3   |  Fanta Laranja   |   ", qntProduct3)
-            print("  4   |  Sprite          |   ", qntProduct4)
-            print("  5   |  Água mineral    |   ", qntProduct5)
+
             print("-----------------------------------")
             print()
             print("A máquina está com as seguintes notas:")
