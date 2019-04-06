@@ -162,6 +162,23 @@ while isRunning:
                              "----------------------------------------------------------------------\n"))
 
         while addCaixa == 1:
+
+            print("---------------------------------------------")
+            print("Código                |          Moeda")
+            print()
+            print("  0.05                |          0,05  ")
+            print("  0.10                |          0,10")
+            print("  0.25                |          0,25")
+            print("  0.50                |          0,50")
+            print("  1.00                |          1,00")
+            print("  2.00                |          2,00")
+            print("  5.00                |          5,00")
+            print("  10.00               |         10,00")
+            print("  20.00               |         20,00")
+            print("  50.00               |         50,00")
+            print("  100.00              |        100,00")
+            print("---------------------------------------------")
+            print()
             notaAdicionar = float(input("Qual o valor da nota desejada ?: \n"))
 
             if notaAdicionar == 0.05:
