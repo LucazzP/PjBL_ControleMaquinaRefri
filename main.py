@@ -1,5 +1,6 @@
 ##### Variáveis #####
 
+
 isRunning = True
 idProduct = 0
 qntProduct1 = 10
@@ -58,7 +59,7 @@ while isRunning:
     idProduct = input("Digite o número da bebida desejada: \n")
 
     # Verificar se é numero
-    if idProduct.isnumeric():
+    if idProduct is 1 or 2 or 3 or 4 or 5 or 996:
         idProduct = int(idProduct)
     else:
         idProduct = 404
