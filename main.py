@@ -1,5 +1,5 @@
 ##### Variáveis #####
-##master##
+##master
 
 
 isRunning = True
