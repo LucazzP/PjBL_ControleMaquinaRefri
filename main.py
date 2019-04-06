@@ -45,7 +45,7 @@ valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + q
 
 while isRunning:
 
-    print("")
+    print()
     print("-----------------------------------")
     print("Número|  Bebida          | Valor")
     print("  1   |  Coca-Cola       | R$ 3.50")
@@ -181,67 +181,62 @@ while isRunning:
                 if valorTroco > 0:
                     while valorTroco > 0:
 
-                        if valorTroco == 0.05 and qntCentavosMaquina05 > 0:
-                            notaTroco = 0.05
-                            valorTroco += -0.05
-                            qntCentavosMaquina05 += -1
+                        if valorTroco >= 100 and qntNotaMaquina100 > 0:
+                            notaTroco = 100
+                            valorTroco += -(valorTroco % 100)
+                            qntNotaMaquina100 += -1
 
-                        elif valorTroco == 0.1 and qntCentavosMaquina10 > 0:
-                            notaTroco = 0.1
-                            valorTroco += -0.1
-                            qntCentavosMaquina10 += -1
-
-                        elif valorTroco == 0.25 and qntCentavosMaquina25 > 0:
-                            notaTroco = 0.25
-                            valorTroco += -0.25
-                            qntCentavosMaquina25 += -1
-
-                        elif valorTroco == 0.5 and qntCentavosMaquina50 > 0:
-                            notaTroco = 0.5
-                            valorTroco += -0.5
-                            qntCentavosMaquina50 += -1
-
-                        elif valorTroco == 1 and qntNotaMaquina1 > 0:
-                            notaTroco = 1
-                            valorTroco += -1
-                            qntNotaMaquina1 += -1
-
-                        elif valorTroco == 2 and qntNotaMaquina2 > 0:
-                            notaTroco = 2
-                            valorTroco += -2
-                            qntNotaMaquina2 += -1
-
-                        # Verificação complexa
-                        elif 2 < valorTroco < 5 and qntNotaMaquina2 > 0:
-                            notaTroco = 2
-                            valorTroco += -2
-                            qntNotaMaquina2 += -1
-                        # Fim da Verificação complexa
-
-                        elif valorTroco == 5 and qntNotaMaquina5 > 0:
-                            notaTroco = 5
-                            valorTroco += -5
-                            qntNotaMaquina5 += -1
-
-                        elif valorTroco == 10 and qntNotaMaquina10 > 0:
-                            notaTroco = 10
-                            valorTroco += -10
-                            qntNotaMaquina10 += -1
-
-                        elif valorTroco == 20 and qntNotaMaquina20 > 0:
-                            notaTroco = 20
-                            valorTroco += -20
-                            qntNotaMaquina20 += -1
-
-                        elif valorTroco == 50 and qntNotaMaquina50 > 0:
+                        elif valorTroco >= 50 and qntNotaMaquina50 > 0:
                             notaTroco = 50
-                            valorTroco += -50
+                            valorTroco += -(valorTroco % 50)
                             qntNotaMaquina50 += -1
 
-                        elif valorTroco == 100 and qntNotaMaquina100 > 0:
-                            notaTroco = 100
-                            valorTroco += -100
-                            qntNotaMaquina100 += -1
+                        elif valorTroco >= 20 and qntNotaMaquina20 > 0:
+                            notaTroco = 20
+                            valorTroco += -(valorTroco % 20)
+                            qntNotaMaquina20 += -1
+
+                        elif valorTroco >= 10 and qntNotaMaquina10 > 0:
+                            notaTroco = 10
+                            valorTroco += -(valorTroco % 10)
+                            qntNotaMaquina10 += -1
+
+                        elif valorTroco >= 5 and qntNotaMaquina5 > 0:
+                            notaTroco = 5
+                            valorTroco += -(valorTroco % 5)
+                            qntNotaMaquina5 += -1
+
+                        elif valorTroco >= 2 and qntNotaMaquina2 > 0:
+                            notaTroco = 2
+                            print(valorTroco)
+                            valorTroco += -(valorTroco % 2)
+                            print(valorTroco)
+                            qntNotaMaquina2 += -1
+
+                        elif valorTroco >= 1 and qntNotaMaquina1 > 0:
+                            notaTroco = 1
+                            valorTroco += -(valorTroco % 1)
+                            qntNotaMaquina1 += -1
+
+                        elif valorTroco >= 0.5 and qntCentavosMaquina50 > 0:
+                            notaTroco = 0.5
+                            valorTroco += -(valorTroco % 0.5)
+                            qntCentavosMaquina50 += -1
+
+                        elif valorTroco >= 0.25 and qntCentavosMaquina25 > 0:
+                            notaTroco = 0.25
+                            valorTroco += -(valorTroco % 0.25)
+                            qntCentavosMaquina25 += -1
+
+                        elif valorTroco >= 0.1 and qntCentavosMaquina10 > 0:
+                            notaTroco = 0.1
+                            valorTroco += -(valorTroco % 0.1)
+                            qntCentavosMaquina10 += -1
+
+                        elif valorTroco >= 0.05 and qntCentavosMaquina05 > 0:
+                            notaTroco = 0.05
+                            valorTroco += -(valorTroco % 0.05)
+                            qntCentavosMaquina05 += -1
 
                         else:
                             print("\nNão possuo troco na máquina, não será possível realizar a compra :(")
