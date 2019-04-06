@@ -1,6 +1,7 @@
 ##### Variáveis #####
 #renan teste#
 #renan teste#
+#oi
 
 isRunning = True
 idProduct = 0
