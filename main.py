@@ -181,7 +181,26 @@ while isRunning:
                 if valorTroco > 0:
                     while valorTroco > 0:
 
-                        if valorTroco >= 100 and qntNotaMaquina100 > 0:
+                        if valorTotalMaquina < valorTroco:
+                            print("\nNão possuo troco na máquina, não será possível realizar a compra :(")
+                            print("Devolvendo notas inseridas")
+                            # Reset notas inseridas
+                            notaTroco = 0
+                            valorTroco = 0
+                            valorTotalInserido = 0
+                            qntCentavos05 = 0
+                            qntCentavos10 = 0
+                            qntCentavos25 = 0
+                            qntCentavos50 = 0
+                            qntNota1 = 0
+                            qntNota2 = 0
+                            qntNota5 = 0
+                            qntNota10 = 0
+                            qntNota20 = 0
+                            qntNota50 = 0
+                            qntNota100 = 0
+
+                        elif valorTroco >= 100 and qntNotaMaquina100 > 0:
                             notaTroco = 100
                             valorTroco += - 100
                             qntNotaMaquina100 += -1
