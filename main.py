@@ -79,16 +79,6 @@ while isRunning:
     if idProduct == 996:  # 996 = admPassword
         # Área do admnistrador
         print("Olá Administrador!")
-        print("A máquina possui o seguinte estoque:")
-        print()
-        print("-----------------------------------")
-        print("Número|  Bebida          | Quantidade")
-        print("  1   |  Coca-Cola       |   ", qntProduct1)
-        print("  2   |  Fanta Uva       |   ", qntProduct2)
-        print("  3   |  Fanta Laranja   |   ", qntProduct3)
-        print("  4   |  Sprite          |   ", qntProduct4)
-        print("  5   |  Água mineral    |   ", qntProduct5)
-        print("-----------------------------------")
         print()
         print("A máquina está com as seguintes notas:")
         print()
@@ -108,11 +98,99 @@ while isRunning:
         print("-----------------------------------")
         print("A máquina possui R$ {:.2f}".format(valorTotalMaquina))
         print()
+        print()
+        print("A máquina possui o seguinte estoque:")
+        print()
+        print("-----------------------------------")
+        print("Número|  Bebida          | Quantidade")
+        print("  1   |  Coca-Cola       |   ", qntProduct1)
+        print("  2   |  Fanta Uva       |   ", qntProduct2)
+        print("  3   |  Fanta Laranja   |   ", qntProduct3)
+        print("  4   |  Sprite          |   ", qntProduct4)
+        print("  5   |  Água mineral    |   ", qntProduct5)
+        print("-----------------------------------")
 
-        #Adicionando dinheiro ao caixa
-        addCaixa = int(input("Deseja adicionar dinheiro ao caixa ? Se sim digite 1 se nao digite 2: \n"))
+
+        # Adicionando dinheiro ao caixa e produtos ao estoque
+        addProduto = int(input("--------------------------------------------------------\n"
+                             "Adicionar produtos ou moedas?, escolha uma opção:\n"
+                             " Opção |   Descrição \n"
+                             " 1     |   Produtos       \n"
+                             " 2     |   Moedas \n"
+                             "--------------------------------------------------------\n"))
+
+
+        #Produtos
+        while addProduto == 1:
+            produtoAdicionar = float(input("Qual bebida deseja adicionar?: \n"))
+
+            if produtoAdicionar == 1:
+                produtoQuantia = int(input("Digite a quantia de Coca-Cola que deseja adicionar: \n"))
+                qntProduct1 += produtoQuantia
+            elif produtoAdicionar == 2:
+                produtoQuantia = int(input("Digite a quantia de Fanta Uva que deseja adicionar: \n"))
+                qntProduct2 += produtoQuantia
+            elif produtoAdicionar == 3:
+                produtoQuantia = int(input("Digite a quantia de Fanta Laranja que deseja adicionar: \n"))
+                qntProduct3 += produtoQuantia
+            elif produtoAdicionar == 4:
+                produtoQuantia = int(input("Digite a quantia de Sprite que deseja adicionar: \n"))
+                qntProduct4 += produtoQuantia
+            elif produtoAdicionar == 5:
+                produtoQuantia = int(input("Digite a quantia de Água mineral que deseja adicionar: \n"))
+                qntProduct5 += produtoQuantia
+
+
+            print("A máquina possui o seguinte estoque:")
+            print()
+            print("-----------------------------------")
+            print("Número|  Bebida          | Quantidade")
+            print("  1   |  Coca-Cola       |   ", qntProduct1)
+            print("  2   |  Fanta Uva       |   ", qntProduct2)
+            print("  3   |  Fanta Laranja   |   ", qntProduct3)
+            print("  4   |  Sprite          |   ", qntProduct4)
+            print("  5   |  Água mineral    |   ", qntProduct5)
+            print("-----------------------------------")
+            print()
+
+            addProduto = int(input("-------------------------------------\n"
+                                 "Deseja sair ?, escolha uma opção:\n"
+                                 " Opção |   Descrição \n"
+                                 "\n"
+                                 " 2     |   Adicionar notas      \n"
+                                 " 1     |   Adicionar mais refrigerantes\n"
+                                 "-----------------------------------\n"))
+
+
+
+
+        #Dinheiro
+        addCaixa = int(input("----------------------------------------------------------------------\n"
+                             "Tem certeza que deseja adicionar moedas ao caixa ?, escolha uma opção:\n"
+                             " Opção |   Descrição \n"
+                             " 1     |   Sim       \n"
+                             " 2     |   Não\n"
+                             "----------------------------------------------------------------------\n"))
 
         while addCaixa == 1:
+
+
+            print("---------------------------------------------")
+            print(" Código               |          Moeda")
+            print()
+            print("  0.05                |          0,05")
+            print("  0.10                |          0,10")
+            print("  0.25                |          0,25")
+            print("  0.50                |          0,50")
+            print("  1.00                |          1,00")
+            print("  2.00                |          2,00")
+            print("  5.00                |          5,00")
+            print("  10.00               |         10,00")
+            print("  20.00               |         20,00")
+            print("  50.00               |         50,00")
+            print("  100.00              |        100,00")
+            print("---------------------------------------------")
+            print()
 
             notaAdicionar = float(input("Qual o valor da nota desejada ?: \n"))
 
@@ -135,27 +213,27 @@ while isRunning:
             elif notaAdicionar == 1:
                 notaQuantia = int(input("Digite a quantia de notas de 1: \n"))
                 qntNotaMaquina1 += notaQuantia
-
+                
             elif notaAdicionar == 2:
                 notaQuantia = int(input("Digite a quantia de notas de 2: \n"))
                 qntNotaMaquina2 += notaQuantia
-
+                
             elif notaAdicionar == 5:
                 notaQuantia = int(input("Digite a quantia de notas de 5: \n"))
                 qntNotaMaquina5 += notaQuantia
-
+                
             elif notaAdicionar == 10:
                 notaQuantia = int(input("Digite a quantia de notas de 10: \n"))
                 qntNotaMaquina10 += notaQuantia
-
+                
             elif notaAdicionar == 20:
                 notaQuantia = int(input("Digite a quantia de notas de 20: \n"))
                 qntNotaMaquina20 += notaQuantia
-
+                
             elif notaAdicionar == 50:
                 notaQuantia = int(input("Digite a quantia de notas de 50: \n"))
                 qntNotaMaquina50 += notaQuantia
-
+                
             elif notaAdicionar == 100:
                 notaQuantia = int(input("Digite a quantia de notas de 100: \n"))
                 qntNotaMaquina100 += notaQuantia
