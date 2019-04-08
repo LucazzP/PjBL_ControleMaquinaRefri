@@ -2,6 +2,7 @@
 ##master##
 
 
+
 isRunning = True
 idProduct = 0
 qntProduct1 = 10
@@ -37,9 +38,10 @@ qntNotaMaquina10 = 0
 qntNotaMaquina20 = 0
 qntNotaMaquina50 = 0
 qntNotaMaquina100 = 0
-valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + qntCentavosMaquina25 * 0.25 + \
-                    qntCentavosMaquina50 * 0.50 + qntNotaMaquina1 * 1 + qntNotaMaquina2 * 2 + qntNotaMaquina5 * 5 + \
-                    qntNota10 * 10 + qntNotaMaquina20 * 20 + qntNotaMaquina50 * 50 + qntNotaMaquina100 * 100
+credito = 0
+cancelar = 0
+notaQuantia = 0
+
 
 ##### Início #####
 
@@ -47,6 +49,15 @@ valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + q
 
 while isRunning:
 
+    valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + qntCentavosMaquina25 * 0.25 + \
+                        qntCentavosMaquina50 * 0.50 + qntNotaMaquina1 * 1 + qntNotaMaquina2 * 2 + qntNotaMaquina5 * 5 + \
+                        qntNota10 * 10 + qntNotaMaquina20 * 20 + qntNotaMaquina50 * 50 + qntNotaMaquina100 * 100
+
+    if credito > 0:
+        print("-----------------------------------------------------")
+        print("A máquina está com R$ {:.2f} de créditos!! Aproveite!".format(credito))
+        print("-----------------------------------------------------")
+        valorTotalInserido = credito
     print()
     print("-----------------------------------")
     print("Número|  Bebida          | Valor")
@@ -65,7 +76,7 @@ while isRunning:
     else:
         idProduct = 404
 
-    if idProduct == 996: # 996 = admPassword
+    if idProduct == 996:  # 996 = admPassword
         # Área do admnistrador
         print("Olá Administrador!")
         print()
@@ -163,10 +174,11 @@ while isRunning:
 
         while addCaixa == 1:
 
+
             print("---------------------------------------------")
-            print("Código                |          Moeda")
+            print(" Código               |          Moeda")
             print()
-            print("  0.05                |          0,05  ")
+            print("  0.05                |          0,05")
             print("  0.10                |          0,10")
             print("  0.25                |          0,25")
             print("  0.50                |          0,50")
@@ -179,69 +191,95 @@ while isRunning:
             print("  100.00              |        100,00")
             print("---------------------------------------------")
             print()
+
             notaAdicionar = float(input("Qual o valor da nota desejada ?: \n"))
 
             if notaAdicionar == 0.05:
                 notaQuantia = int(input("Digite a quantia de notas de 0.05: \n"))
                 qntCentavosMaquina05 += notaQuantia
+
             elif notaAdicionar == 0.1:
                 notaQuantia = int(input("Digite a quantia de notas de 0.10: \n"))
                 qntCentavosMaquina10 += notaQuantia
+
             elif notaAdicionar == 0.25:
                 notaQuantia = int(input("Digite a quantia de notas de 0.25: \n"))
                 qntCentavosMaquina25 += notaQuantia
+
             elif notaAdicionar == 0.50:
                 notaQuantia = int(input("Digite a quantia de notas de 0.50: \n"))
                 qntCentavosMaquina50 += notaQuantia
+
             elif notaAdicionar == 1:
                 notaQuantia = int(input("Digite a quantia de notas de 1: \n"))
                 qntNotaMaquina1 += notaQuantia
+                
             elif notaAdicionar == 2:
                 notaQuantia = int(input("Digite a quantia de notas de 2: \n"))
                 qntNotaMaquina2 += notaQuantia
+                
             elif notaAdicionar == 5:
                 notaQuantia = int(input("Digite a quantia de notas de 5: \n"))
                 qntNotaMaquina5 += notaQuantia
+                
             elif notaAdicionar == 10:
                 notaQuantia = int(input("Digite a quantia de notas de 10: \n"))
                 qntNotaMaquina10 += notaQuantia
+                
             elif notaAdicionar == 20:
                 notaQuantia = int(input("Digite a quantia de notas de 20: \n"))
                 qntNotaMaquina20 += notaQuantia
+                
             elif notaAdicionar == 50:
                 notaQuantia = int(input("Digite a quantia de notas de 50: \n"))
                 qntNotaMaquina50 += notaQuantia
+                
             elif notaAdicionar == 100:
                 notaQuantia = int(input("Digite a quantia de notas de 100: \n"))
                 qntNotaMaquina100 += notaQuantia
 
+            if notaQuantia == 0:
+                print("O valor da nota digitada não existe, digite novamente!")
+            else:
+                valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + qntCentavosMaquina25 * 0.25 + \
+                                    qntCentavosMaquina50 * 0.50 + qntNotaMaquina1 * 1 + qntNotaMaquina2 * 2 + qntNotaMaquina5 * 5 + \
+                                    qntNota10 * 10 + qntNotaMaquina20 * 20 + qntNotaMaquina50 * 50 + qntNotaMaquina100 * 100
 
-            print("-----------------------------------")
-            print()
-            print("A máquina está com as seguintes notas:")
-            print()
-            print("-----------------------------------")
-            print("Nota R$ | Quantidade | R$ Total")
-            print("  0,05  |     {}     |    {:.2f}".format(qntCentavosMaquina05, qntCentavosMaquina05 * 0.05))
-            print("  0,10  |     {}     |    {:.2f}".format(qntCentavosMaquina10, qntCentavosMaquina10 * 0.1))
-            print("  0,25  |     {}     |    {:.2f}".format(qntCentavosMaquina25, qntCentavosMaquina25 * 0.25))
-            print("  0,50  |     {}     |    {:.2f}".format(qntCentavosMaquina50, qntCentavosMaquina50 * 0.50))
-            print("  1,00  |     {}     |    {:.2f}".format(qntNotaMaquina1, qntNotaMaquina1 * 1))
-            print("  2,00  |     {}     |    {:.2f}".format(qntNotaMaquina2, qntNotaMaquina2 * 2))
-            print("  5,00  |     {}     |    {:.2f}".format(qntNotaMaquina5, qntNotaMaquina5 * 5))
-            print("  10,00 |     {}     |    {:.2f}".format(qntNotaMaquina10, qntNotaMaquina10 * 10))
-            print("  20,00 |     {}     |    {:.2f}".format(qntNotaMaquina20, qntNotaMaquina20 * 20))
-            print("  50,00 |     {}     |    {:.2f}".format(qntNotaMaquina50, qntNotaMaquina50 * 50))
-            print("  100,00|     {}     |    {:.2f}".format(qntNotaMaquina100, qntNotaMaquina100 * 100))
-            print("-----------------------------------")
-            print("A máquina possui R$ {:.2f}".format(valorTotalMaquina))
-            print()
+                print("A máquina possui o seguinte estoque:")
+                print()
+                print("-----------------------------------")
+                print("Número|  Bebida          | Quantidade")
+                print("  1   |  Coca-Cola       |   ", qntProduct1)
+                print("  2   |  Fanta Uva       |   ", qntProduct2)
+                print("  3   |  Fanta Laranja   |   ", qntProduct3)
+                print("  4   |  Sprite          |   ", qntProduct4)
+                print("  5   |  Água mineral    |   ", qntProduct5)
+                print("-----------------------------------")
+                print()
+                print("A máquina está com as seguintes notas:")
+                print()
+                print("-----------------------------------")
+                print("Nota R$ | Quantidade | R$ Total")
+                print("  0,05  |     {}     |    {:.2f}".format(qntCentavosMaquina05, qntCentavosMaquina05 * 0.05))
+                print("  0,10  |     {}     |    {:.2f}".format(qntCentavosMaquina10, qntCentavosMaquina10 * 0.1))
+                print("  0,25  |     {}     |    {:.2f}".format(qntCentavosMaquina25, qntCentavosMaquina25 * 0.25))
+                print("  0,50  |     {}     |    {:.2f}".format(qntCentavosMaquina50, qntCentavosMaquina50 * 0.50))
+                print("  1,00  |     {}     |    {:.2f}".format(qntNotaMaquina1, qntNotaMaquina1 * 1))
+                print("  2,00  |     {}     |    {:.2f}".format(qntNotaMaquina2, qntNotaMaquina2 * 2))
+                print("  5,00  |     {}     |    {:.2f}".format(qntNotaMaquina5, qntNotaMaquina5 * 5))
+                print("  10,00 |     {}     |    {:.2f}".format(qntNotaMaquina10, qntNotaMaquina10 * 10))
+                print("  20,00 |     {}     |    {:.2f}".format(qntNotaMaquina20, qntNotaMaquina20 * 20))
+                print("  50,00 |     {}     |    {:.2f}".format(qntNotaMaquina50, qntNotaMaquina50 * 50))
+                print("  100,00|     {}     |    {:.2f}".format(qntNotaMaquina100, qntNotaMaquina100 * 100))
+                print("-----------------------------------")
+                print("A máquina possui R$ {:.2f}".format(valorTotalMaquina))
+                print()
 
             addCaixa = int(input("-----------------------------------\n"
                                  "Deseja sair ?, escolha uma opção:\n"
-                                 " Opção |   Descrição \n"
-                                 " 2     |   Sair       \n"
+                                 " Opção |         Descrição \n"
                                  " 1     |   Adicionar mais moedas\n"
+                                 " 2     |           Sair\n"
                                  "-----------------------------------\n"))
 
 
@@ -271,15 +309,16 @@ while isRunning:
             # Creditar notas inseridas
             while valorTotalInserido < valorBebida:
 
-                if valorTotalInserido > 0 : print(
+                if valorTotalInserido > 0: print(
                     "Você possui R$ {} de créditos, faltam R$ {}"
                         .format(valorTotalInserido, valorBebida - valorTotalInserido)
                 )
-                if valorTotalInserido == 0 : print("O valor total é R$ ", valorBebida)
+                if valorTotalInserido == 0:
+                    print("O valor total é R$ ", valorBebida)
                 notaInserida = float(input("Insira o valor da nota ou moeda colocada na máquina: \n"))
 
                 if notaInserida == 0.05:
-                    qntCentavos05+= 1
+                    qntCentavos05 += 1
                     valorTotalInserido += 0.05
 
                 elif notaInserida == 0.1:
@@ -322,33 +361,49 @@ while isRunning:
                     qntNota100 += 1
                     valorTotalInserido += 100
 
-                else : print("\nVocê digitou o valor de uma nota inexistente, digite novamente: \n")
+                else:
+                    print("\nVocê digitou o valor de uma nota inexistente, digite novamente: \n")
 
             if valorTotalInserido >= valorBebida:
-                valorTroco = valorTotalInserido - valorBebida
+                if credito > valorBebida :
+                    valorTroco = valorTotalInserido - valorBebida - credito
+                else:
+                    valorTroco = valorTotalInserido - valorBebida
 
                 # Devolver Troco
                 if valorTroco > 0:
                     while valorTroco > 0:
 
                         if valorTotalMaquina < valorTroco:
-                            print("\nNão possuo troco na máquina, não será possível realizar a compra :(")
-                            print("Devolvendo notas inseridas")
-                            # Reset notas inseridas
-                            notaTroco = 0
-                            valorTroco = 0
-                            valorTotalInserido = 0
-                            qntCentavos05 = 0
-                            qntCentavos10 = 0
-                            qntCentavos25 = 0
-                            qntCentavos50 = 0
-                            qntNota1 = 0
-                            qntNota2 = 0
-                            qntNota5 = 0
-                            qntNota10 = 0
-                            qntNota20 = 0
-                            qntNota50 = 0
-                            qntNota100 = 0
+                            # Cancelar compra por falta de troco ou não
+                            print("A máquina não possui troco, escolha uma opção:")
+                            print("-----------------------------------------------------")
+                            print(" Opção |                 Descrição")
+                            print("   1   | Cancelar a compra e receber o valor inserido")
+                            print("   2   |     Comprar e deixar o troco como crédito")
+                            print("-----------------------------------------------------")
+                            cancelar = int(input("Digite sua escolha:\n"))
+                            if cancelar == 2:
+                                credito = valorTotalInserido - valorBebida
+                                valorTroco = 0
+                            else:
+                                print("\nNão possuo troco, não será possível realizar a compra :(")
+                                print("Devolvendo notas inseridas")
+                                # Reset notas inseridas
+                                notaTroco = 0
+                                valorTroco = 0
+                                valorTotalInserido = 0
+                                qntCentavos05 = 0
+                                qntCentavos10 = 0
+                                qntCentavos25 = 0
+                                qntCentavos50 = 0
+                                qntNota1 = 0
+                                qntNota2 = 0
+                                qntNota5 = 0
+                                qntNota10 = 0
+                                qntNota20 = 0
+                                qntNota50 = 0
+                                qntNota100 = 0
 
                         elif valorTroco >= 100 and qntNotaMaquina100 > 0:
                             notaTroco = 100
@@ -406,34 +461,46 @@ while isRunning:
                             qntCentavosMaquina05 += -1
 
                         else:
-                            print("\nNão possuo troco na máquina, não será possível realizar a compra :(")
-                            print("Devolvendo notas inseridas")
-                            # Reset notas inseridas
-                            notaTroco = 0
-                            valorTroco = 0
-                            valorTotalInserido = 0
-                            qntCentavos05 = 0
-                            qntCentavos10 = 0
-                            qntCentavos25 = 0
-                            qntCentavos50 = 0
-                            qntNota1 = 0
-                            qntNota2 = 0
-                            qntNota5 = 0
-                            qntNota10 = 0
-                            qntNota20 = 0
-                            qntNota50 = 0
-                            qntNota100 = 0
+                            # Cancelar compra por falta de troco ou não
+                            print("A máquina não possui troco, escolha uma opção:")
+                            print("-----------------------------------------------------")
+                            print(" Opção |                 Descrição")
+                            print("   1   | Cancelar a compra e receber o valor inserido")
+                            print("   2   |     Comprar e deixar o troco como crédito")
+                            print("-----------------------------------------------------")
+                            cancelar = int(input("Digite sua escolha:\n"))
+                            if cancelar == 2:
+                                credito = valorTotalInserido - valorBebida
+                                valorTroco = 0
+                            else:
+                                print("\nNão possuo troco, não será possível realizar a compra :(")
+                                print("Devolvendo notas inseridas")
+                                # Reset notas inseridas
+                                notaTroco = 0
+                                valorTroco = 0
+                                valorTotalInserido = 0
+                                qntCentavos05 = 0
+                                qntCentavos10 = 0
+                                qntCentavos25 = 0
+                                qntCentavos50 = 0
+                                qntNota1 = 0
+                                qntNota2 = 0
+                                qntNota5 = 0
+                                qntNota10 = 0
+                                qntNota20 = 0
+                                qntNota50 = 0
+                                qntNota100 = 0
 
                         if notaTroco > 0:
                             # Devolver nota
                             print("Devolvendo nota de R$ ", notaTroco)
 
                 # Contabilizar venda
-                if valorTroco == 0 and valorTotalInserido > 0:
+                if valorTroco <= 0 < valorTotalInserido:
                     # Compra realizada
                     print("Você adquiriu uma {} no valor de R$ {}".format(nameSelectedProduct, valorBebida))
 
-                    #Atualizando estoque
+                    # Atualizando estoque
                     if idProduct == 1:
                         qntProduct1 += -1
                     elif idProduct == 2:
@@ -458,7 +525,15 @@ while isRunning:
                     qntNotaMaquina50 += qntNota50
                     qntNotaMaquina100 += qntNota100
 
+                    # Descontar bebida do credito
+                    if credito > 0 and cancelar == 0:
+                        if (valorBebida - credito) < 0:
+                            credito += -valorBebida
+                        else:
+                            credito = 0
+
                     # Reset
+                    cancelar = 0
                     valorTotalInserido = 0
                     qntCentavos05 = 0
                     qntCentavos10 = 0
