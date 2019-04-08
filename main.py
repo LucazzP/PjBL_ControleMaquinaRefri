@@ -157,8 +157,8 @@ while isRunning:
                                  "Deseja sair ?, escolha uma opção:\n"
                                  " Opção |   Descrição \n"
                                  "\n"
-                                 " 2     |   Adicionar notas      \n"
-                                 " 1     |   Adicionar mais refrigerantes\n"
+                                 " 1     |   Adicionar mais refrigerantes      \n"
+                                 " 2     |   Adicionar notas\n"
                                  "-----------------------------------\n"))
 
 
@@ -275,7 +275,7 @@ while isRunning:
                 print("A máquina possui R$ {:.2f}".format(valorTotalMaquina))
                 print()
 
-            addCaixa = int(input("-----------------------------------\n"
+            addCaixa = int(input("\n-----------------------------------\n"
                                  "Deseja sair ?, escolha uma opção:\n"
                                  " Opção |         Descrição \n"
                                  " 1     |   Adicionar mais moedas\n"
