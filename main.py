@@ -692,7 +692,7 @@ while isRunning:
                     qntNota100 = 0
                     valorTotalMaquina = qntCentavosMaquina05 * 0.05 + qntCentavosMaquina10 * 0.1 + qntCentavosMaquina25 * 0.25 + \
                                         qntCentavosMaquina50 * 0.50 + qntNotaMaquina1 * 1 + qntNotaMaquina2 * 2 + qntNotaMaquina5 * 5 + \
-                                        qntNota10 * 10 + qntNotaMaquina20 * 20 + qntNotaMaquina50 * 50 + qntNotaMaquina100 * 100
+                                        qntNotaMaquina10 * 10 + qntNotaMaquina20 * 20 + qntNotaMaquina50 * 50 + qntNotaMaquina100 * 100
 
 
     else:

@@ -64,6 +64,23 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PjBL_ControleMaquinaRefri" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PjBL_ControleMaquinaRefri" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -211,7 +228,7 @@
     <MESSAGE value="Correções finais e finalizações" />
     <MESSAGE value="Finalizado, tudo funcionando" />
     <MESSAGE value="comecando o plus do adm, adicionar bebida extra e preco e nome" />
-    <option name="LAST_COMMIT_MESSAGE" value="comecando o plus do adm, adicionar bebida extra e preco e nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado, tudo funcionando" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1363339426/builtins.py" />
