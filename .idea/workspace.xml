@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be049265-fbd6-4de2-a515-af36ab29a6a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ControleMaquinaRefri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ControleMaquinaRefri.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="196">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
             </state>
           </provider>
         </entry>
@@ -32,10 +34,11 @@
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lucas" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -56,6 +59,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <panes>
       <pane id="ProjectPane">
         <subPane>
@@ -111,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -168,13 +177,28 @@
       <option name="project" value="LOCAL" />
       <updated>1554537265498</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finalizado, tudo funcionando">
+      <created>1554697817868</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554697817868</updated>
+    </task>
+    <task id="LOCAL-00008" summary="comecando o plus do adm, adicionar bebida extra e preco e nome">
+      <created>1554767312828</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554767312828</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07193959" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17718121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -183,14 +207,16 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49960256" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49731544" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.042432815" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="3" weight="0.4328299" />
-      <window_info anchor="right" id="Run" order="4" weight="0.40023848" />
+      <window_info active="true" anchor="right" id="Run" order="4" visible="true" weight="0.40616623" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,13 +226,16 @@
     <MESSAGE value="Devoluçãodo troco aprimorado" />
     <MESSAGE value="Adição função crédito" />
     <MESSAGE value="Correções finais e finalizações" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correções finais e finalizações" />
+    <MESSAGE value="Finalizado, tudo funcionando" />
+    <MESSAGE value="comecando o plus do adm, adicionar bebida extra e preco e nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado, tudo funcionando" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1363339426/builtins.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="196">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
